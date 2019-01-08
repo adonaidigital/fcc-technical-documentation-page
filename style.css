@@ -1,0 +1,40 @@
+body{
+    color: #556B2F;
+    font-family: 'liebuchet MS', Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding:0;
+    height: 100%;
+    width: 100%;
+    background: #F6FAD2;
+}
+
+#main-doc{
+    display: block;
+    flex-direction: row;
+    /* justify-content: center; */
+    overflow: auto;
+}
+
+
+#navbar{
+    display: flex;
+    /* justify-content: flex-start;   */
+    height: 100vh;
+}
+
+#navbar  li {
+    position: relative;
+    border: 1px solid grey;
+    left: -40px;
+    text-align: center;
+}
+
+li{
+    display: block;
+    /* list-style-type: none; */
+    padding: 10px;
+    /* float:right;  */
+   
+
+}
