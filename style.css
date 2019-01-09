@@ -1,40 +1,63 @@
-body{
+body {
     color: #556B2F;
     font-family: 'liebuchet MS', Arial, sans-serif;
     text-align: center;
     margin: 0;
-    padding:0;
+    padding: 0;
     height: 100%;
     width: 100%;
-    background: #F6FAD2;
+    background: #eceee0;
 }
 
-#main-doc{
-    display: block;
-    flex-direction: row;
-    /* justify-content: center; */
+#main-doc {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    
+}
+@media (min-width: 780px){
+    #main-doc{
+    display: flex;
+    }
+    #main-section{
+    max-width: 650px;
+    }
+}
+nav {
+    border-right: 1px solid #a7c224;
+    /* margin-block-start: 2em; */
+}
+section p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* box-sizing: border-box; */
+}
+#navbar {
+    display: flex;
+    justify-content: center;  
+    text-align: center;
+    padding-top: 2em;
+    height: 100%;
+    width: 280px;
+    position: fixed;
+    background-color:#EEE8AA;
     overflow: auto;
 }
 
-
-#navbar{
-    display: flex;
-    /* justify-content: flex-start;   */
-    height: 100vh;
-}
-
-#navbar  li {
+#navbar li {
     position: relative;
-    border: 1px solid grey;
-    left: -40px;
-    text-align: center;
+    border-bottom: 1px solid grey;
+    left: -20px;
+    margin: 1px;
+    padding: 10px;
 }
 
-li{
+li {
     display: block;
     /* list-style-type: none; */
-    padding: 10px;
-    /* float:right;  */
-   
-
+}
+p{
+    white-space: pre-wrap;
+    
 }
